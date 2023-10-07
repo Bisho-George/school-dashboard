@@ -1,0 +1,20 @@
+.teacher {
+    background-color: #EFEFEF;
+}
+
+.teacher img {
+    border-radius: 50%;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: #EFEFEF;
+}
+
+.add i {
+    color: #1246AC !important;
+}
