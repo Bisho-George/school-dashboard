@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import logo from "../../assets/Group 93.svg";
 import { ReactComponent as Dashboard } from "../../assets/dashboard.svg";
 import { ReactComponent as Teachers } from "../../assets/teachers.svg";
@@ -99,9 +98,9 @@ const Asidebar = () => {
               >
               <ListItemButton sx={{ m: 0, p: 0 }}>
                 <ListItemIcon sx={{
-                  fill: location.pathname === `${page.path}` ? theme.palette.primary.main : theme.palette.primary.gray, 
-                }}>{page.icon}</ListItemIcon>
-                <ListItemText primary={page.name} />
+                }}>{React.cloneElement(page.icon, {className: 'color'})}</ListItemIcon>
+
+                <ListItemText primary={page.name} sx={{'& .MuiTypography-root': {fontFamily: 'inter', fontWeight: location.pathname === page.path ? '600' : '', fontSize: '20px', letterSpacing: '0.32px'}}}/>
               </ListItemButton>
             </ListItem>
           ))}
