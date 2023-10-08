@@ -25,7 +25,7 @@ const Root = () => {
             <CssBaseline />
 
             <div>
-                <Navbar drawerWidth={drawerWidth} />
+                <Navbar drawerWidth={drawerWidth}/>
                 <Asidebar />
                 <Box
                     component="main"
