@@ -9,6 +9,7 @@ const Navbar = ({ drawerWidth }) => {
         <Box
             component="nav"
             sx={{
+                pt: '1rem',
                 ml: {xs: '1rem', lg: `${drawerWidth + 30}px`},
                 mr: {md: '30px', xl: '0px'},
                 display: "flex",
