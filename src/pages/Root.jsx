@@ -30,12 +30,10 @@ const Root = () => {
                 <Box
                     component="main"
                     sx={{
-                        marginLeft: {
-                            sm: `${drawerWidth}px`,
-                        },
-                        display: "flex",
-                        justifyContent: "center",
-                        mt: "66px",
+
+                        ml: { xs: '1rem', lg: `${drawerWidth + 30}px` },
+
+                        mt: "2rem",
                     }}
                 >
                     <Outlet />
