@@ -9,21 +9,21 @@ const Navbar = ({ drawerWidth }) => {
         <Box
             component="nav"
             sx={{
-                ml: `${drawerWidth}px`,
+                ml: {xs: '1rem', lg: `${drawerWidth + 30}px`},
+                mr: {md: '30px', xl: '0px'},
                 display: "flex",
-                // width: '1117px',
                 alignItems: 'center',
                 justifyContent: 'space-around',
                 minHeight: '10vh',
-                gap: '60px',
-
+                gap: {md: '2rem', lg: '60px'},
+                
             }}
         >
             <Box component="div">
                 <Typography variant="h5" sx={{ fontWeight: '600', fontSize: '24px', fontFamily: 'inter', color: 'rgba(0, 0, 0, 0.85)', letterSpacing: '0.384px' }}>Good Morning Admin</Typography>
                 <Typography variant="p" sx={{ fontWeight: '500', fontSize: '18px', letterSpacing: '-0.36px', fontFamily: 'inter', color: 'rgba(0, 0, 0, 0.65)' }}>4.45 PM - 19 Jan 2023</Typography>
             </Box>
-            <Box component='div' sx={{ width: '649px' }}>
+            <Box component='div' sx={{ width: {sm: '300px', md: '550px', lg: '649px'}  }}>
                 <Paper
                     component="form"
                     sx={{
