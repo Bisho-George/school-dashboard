@@ -2,6 +2,8 @@
     border-radius: 4px;
     background: #FFF;
     border: none !important;
+}
+.card.shadow{
     /* Card Shadow */
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.08);
 }
@@ -39,10 +41,22 @@
     line-height: 22px;
 }
 
-.dropdown-toggle {
+.year-btn {
     color: #000 !important;
     background-color: #EAF1FF !important;
-    border: none;
+    border: none !important;
+}
+
+.StudentClass-btn,
+.grade-btn {
+    background: transparent !important;
+    border: none !important;
+    color: #585859 !important;
+    font-size: 16px !important;
+    padding: 0 !important;
+}
+.StudentClass-btn{
+    margin-left: 30px !important;
 }
 
 /* calendar */
@@ -71,26 +85,30 @@
     font-size: 18px;
     font-weight: 500;
 }
-.card-subtitle.event{
+
+.card-subtitle.event {
     font-size: 16px;
 }
 
 /* --------------------------------------- */
-.student-grade .card-title .title{
-        font-size: 22px;
-        font-weight: 500;
-        line-height: 22px;
+.student-grade .card-title .title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
 }
-.class-title{
+
+.class-title {
     font-size: 18px;
     font-weight: 500;
 }
-.info p{
+
+.info p {
     color: #585859 !important;
     font-size: 16px;
     margin: 0;
 }
-.info span{
+
+.info span {
     color: #000000;
     font-size: 16px;
     font-weight: 500;

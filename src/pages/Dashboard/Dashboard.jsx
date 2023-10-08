@@ -5,9 +5,13 @@ import classLogo from "../../assets/class-scene-svgrepo.svg";
 import LineChart from "../../components/Charts/Line";
 import CardAnalysis from "../../components/Card/CardAnalysis";
 import BasicDateCalendar from "../../components/Calender/Calendar";
-import YearDropdownButton from "../../components/YearDropDown";
+import DropdownButton from "../../components/DropDownBtn/DropDown";
+import PieChartComponent from "../../components/Charts/ChartPie";
 
 const Dashboard = () => {
+   const years = Array.from({ length: 5 }, (_, index) => new Date().getFullYear() - index); // Array of last 5 years
+   const grade = ["Grade 1","Grade 2","Grade 3"];
+   const StudentClass = ["Class 1","Class 2","Class 3"];
   return (
     <div className="container mb-3">
       <div className="row">
@@ -21,7 +25,7 @@ const Dashboard = () => {
             <div className="col p-3">
               <div className="chart-header d-flex justify-content-between align-items-center">
                 <h3 className="chart-title">Total Earnings</h3>
-                <YearDropdownButton />
+                <DropdownButton label="2023" items={years} buttonClass="year-btn"/>
               </div>
               <LineChart />
             </div>
@@ -31,6 +35,7 @@ const Dashboard = () => {
              <div className="card p-4 my-3 mx-2" style={{backgroundColor:"#EFF4FE"}}>
                <div className="card-title mb-3">
                  <h2 className="title">Students Performance</h2>
+                <DropdownButton label="Grade 1" items={grade} buttonClass="grade-btn"/>
                </div>
                <div className="d-flex justify-content-between align-items-center mb-3">
                   <h5 className="class-title">Class A</h5>
@@ -55,12 +60,25 @@ const Dashboard = () => {
                </div>
              </div>
            </div>
-           <div className="col-md-6"></div>
+           <div className="col-md-6">
+               <div className="card p-4 my-3 mx-2" style={{backgroundColor:"#EFF4FE"}}>
+                 <div className="card-title mb-3 d-flex flex-column align-items-center justify-content-center">
+                    <h2 className="title">Students Attendance</h2>
+                    <div className="d-flex justify-content-between">
+                      <DropdownButton label="Grade 1" items={grade} buttonClass="grade-btn"/>
+                      <DropdownButton label="Grade 1" items={StudentClass} buttonClass="StudentClass-btn"/>
+                    </div>
+                 </div>
+                <div className="d-flex justify-content-center align-items-center">
+                   <PieChartComponent/>
+                </div>
+             </div>
+           </div>
           </div>
         </div>
         <div className="col-sm-12 col-md-3">
           <BasicDateCalendar />
-          <div className="card event mt-4">
+          <div className="card event mt-4 shadow">
             <h2 className="event-title">Events</h2>
             <div className="card-body">
               <h5 className="card-title event">Final Exams</h5>
