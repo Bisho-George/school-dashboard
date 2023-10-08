@@ -2,10 +2,6 @@ import React from "react";
 import Asidebar from "../components/Asidebar/Asidebar";
 import { createTheme, ThemeProvider, CssBaseline, Box } from "@mui/material";
 import { Outlet } from "react-router-dom";
-<<<<<<< HEAD
-=======
-import Navbar from "../components/Navbar/Navbar.jsx";
->>>>>>> b819a8cea0aab578db602e80dddd452ef5d96151
 
 const theme = createTheme({
     palette: {
@@ -15,11 +11,6 @@ const theme = createTheme({
         },
         secondary: {
             main: "#EAF1FF",
-<<<<<<< HEAD
-=======
-            gray: "rgba(217, 217, 210, 0.39)"
-
->>>>>>> b819a8cea0aab578db602e80dddd452ef5d96151
         },
     },
 });
@@ -31,10 +22,6 @@ const Root = () => {
             <CssBaseline />
 
             <div>
-<<<<<<< HEAD
-=======
-                <Navbar drawerWidth={drawerWidth}/>
->>>>>>> b819a8cea0aab578db602e80dddd452ef5d96151
                 <Asidebar />
                 <Box
                     component="main"
