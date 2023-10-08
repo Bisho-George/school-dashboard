@@ -60,11 +60,6 @@ const Asidebar = () => {
       open={open}
       onClose={handleDrawerClose}
     >
-      {/* <DrawerHeader>
-        <IconButton onClick={handleDrawerClose}>
-          {theme.direction === "ltr" ? <ChevronLeft /> : <ChevronRight />}
-        </IconButton>
-      </DrawerHeader> */}
       <Box
         component="div"
         sx={{ display: "flex", flexDirection: "column", gap: "64px" }}
@@ -101,11 +96,7 @@ const Asidebar = () => {
                 <ListItemIcon sx={{
                   fill: location.pathname === `${page.path}` ? theme.palette.primary.main : theme.palette.primary.gray, 
                 }}>{page.icon}</ListItemIcon>
-                <ListItemText primary={page.name} />
-                <ListItemIcon>
-                {page.icon}</ListItemIcon>
                 <ListItemText primary={page.name} sx={{'& .MuiTypography-root': {fontFamily: 'inter', fontWeight: location.pathname === page.path ? '600' : '', fontSize: '20px', letterSpacing: '0.32px'}}}/>
-
               </ListItemButton>
             </ListItem>
           ))}

@@ -7,10 +7,12 @@ import {
 } from "react-router-dom";
 import Root from './pages/Root.jsx';
 import Dashboard from './pages/Dashboard/Dashboard';
+import TeachersPage from './pages/TeachersPage/TeachersPage.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route index element={<Dashboard />} />
+      <Route path='/teachers' element={<TeachersPage />} />
     </Route>
   )
 );

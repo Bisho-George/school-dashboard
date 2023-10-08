@@ -1,5 +1,6 @@
 import React from "react";
 import Asidebar from "../components/Asidebar/Asidebar";
+import Navbar from '../components/Navbar/Navbar'
 import { createTheme, ThemeProvider, CssBaseline, Box } from "@mui/material";
 import { Outlet } from "react-router-dom";
 
@@ -24,9 +25,7 @@ const Root = () => {
             <CssBaseline />
 
             <div>
-
                 <Navbar drawerWidth={drawerWidth} />
-
                 <Asidebar />
                 <Box
                     component="main"
