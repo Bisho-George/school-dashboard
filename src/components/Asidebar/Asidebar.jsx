@@ -45,6 +45,7 @@ const Asidebar = () => {
   return (
     <Drawer
       sx={{
+        display: {xs: 'none',lg: 'block'},
         flexShrink: 0,
         "& .MuiDrawer-paper": {
           flexDirection: "column",
