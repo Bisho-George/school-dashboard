@@ -28,7 +28,8 @@ export const parentTableFields = [
     "Student Number",
     "Address",
     "Phone Number",
-    "Payment Method"
+    "Payment Method",
+
 ]
 
 export const tempParentsTableData = [
@@ -38,4 +39,6 @@ export const tempParentsTableData = [
     { id: 4,  picture: pic, name: "Daniel", username: "Kofi", password: "****", gender: "Male", studentNumber: "12", address: "6 oct", phoneNumber: "0122**", paymentMethod: "cash" },
     { id: 5, picture: pic, name: "Daniel", username: "Kofi", password: "****", gender: "Male", studentNumber: "12", address: "6 oct", phoneNumber: "0122**", paymentMethod: "cash" },
     { id: 6,  picture: pic, name: "Daniel", username: "Kofi", password: "****", gender: "Male", studentNumber: "12", address: "6 oct", phoneNumber: "0122**", paymentMethod: "cash" },
+    { id: 7,  picture: pic, name: "Daniel", username: "Kofi", password: "****", gender: "Male", studentNumber: "12", address: "6 oct", phoneNumber: "0122**", paymentMethod: "cash" },
+    { id: 8,  picture: pic, name: "Daniel", username: "Kofi", password: "****", gender: "Male", studentNumber: "12", address: "6 oct", phoneNumber: "0122**", paymentMethod: "cash" },
 ]
