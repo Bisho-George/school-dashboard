@@ -8,6 +8,7 @@ const Navbar = ({ drawerWidth }) => {
     return (
         <Box
             component="nav"
+
             sx={{
                 pt: '1rem',
                 ml: {xs: '1rem', lg: `${drawerWidth + 30}px`},
