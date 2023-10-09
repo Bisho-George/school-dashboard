@@ -4,7 +4,8 @@ import { tempParentsTableData } from '../../constants/index.js'
 import './parentsTable.css'
 const ParentsTable = () => {
     return (
-        <table class="table">
+        <table className="table parents-table">
+
             <thead>
                 <tr>
                     {parentTableFields.map((field) => (
@@ -16,15 +17,15 @@ const ParentsTable = () => {
             <tbody>
                 {tempParentsTableData.map((data) => (
                     <tr key={data.id}>
-                    <td> <img src={data.picture} alt="dataPic"/></td>
-                    <td>{data.name}</td>
-                    <td>{data.username}</td>
-                    <td>{data.password}</td>
-                    <td>{data.gender}</td>
-                    <td>{data.studentNumber}</td>
-                    <td>{data.address}</td>
-                    <td>{data.phoneNumber}</td>
-                    <td>{data.paymentMethod}</td>
+                    <td className='align-middle'> <img src={data.picture} alt="dataPic"/></td>
+                    <td className='align-middle'>{data.name}</td>
+                    <td className='align-middle'>{data.username}</td>
+                    <td className='align-middle'>{data.password}</td>
+                    <td className='align-middle'>{data.gender}</td>
+                    <td className='align-middle'>{data.studentNumber}</td>
+                    <td className='align-middle'>{data.address}</td>
+                    <td className='align-middle'>{data.phoneNumber}</td>
+                    <td className='align-middle'>{data.paymentMethod}</td>
                 </tr>
 
                 ))}
