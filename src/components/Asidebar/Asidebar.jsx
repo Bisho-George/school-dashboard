@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 
 import logo from "../../assets/Group 93.svg";
-import { ReactComponent as Dashboard } from "../../assets/dashboard.svg";
-import { ReactComponent as Teachers } from "../../assets/teachers.svg";
-import { ReactComponent as Parents } from "../../assets/parents.svg";
-import { ReactComponent as Students } from "../../assets/students.svg";
-import { ReactComponent as Classes } from "../../assets/classes.svg";
-import { ReactComponent as Blog } from "../../assets/blog.svg";
 import { ReactComponent as Logout } from "../../assets/logout.svg";
+import { pages } from "../../constants/index.js";
 
 import {
   Drawer,
@@ -32,14 +27,7 @@ const Asidebar = () => {
   const handleDrawerClose = () => {
     setOpen(false);
   };
-  const pages = [
-    { id: 1, path: "/", name: "Dashboard", icon: <Dashboard /> },
-    { id: 2, path: "/teachers", name: "Teachers", icon: <Teachers /> },
-    { id: 3, path: "/parents", name: "Parents", icon: <Parents /> },
-    { id: 4, path: "/students", name: "Students", icon: <Students /> },
-    { id: 5, path: "/classes", name: "Classes", icon: <Classes /> },
-    { id: 6, path: "/blog", name: "Blog", icon: <Blog /> },
-  ];
+
   let location = useLocation();
   const navigate = useNavigate();
   return (

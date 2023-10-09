@@ -1,15 +1,14 @@
 import { Container, Box, Select } from '@mui/material'
 import React from 'react'
+import ParentsTable from '../../components/ParentsTable/ParentsTable.jsx'
+import ParentsFilter from '../../components/ParentsFilter/ParentsFilter.jsx'
 
-const Parents = ({ drawerWidth }) => {
+const Parents = () => {
     return (
-        <Container >
-            <Box component='div' sx={{display: 'flex', justifyContent: 'space-between'}}>
-                <Box>
-                    
-                </Box>
-            </Box>
-        </Container>
+        <section className='container-fluid'> 
+            <ParentsFilter />
+            <ParentsTable/>
+        </section>
     )
 }
 
