@@ -8,7 +8,7 @@ function Subtitle({ title, icon }) {
                 <div className="fs-3">
                   {icon}
                 </div>
-                <h3 className='mx-3 fw-bolder'>{title}</h3>
+                <h3 className='fs-4 mx-3 fw-bolder'>{title}</h3>
                 <i className="fs-4 fa-solid fa-caret-down"></i>
         </div>
     </>
