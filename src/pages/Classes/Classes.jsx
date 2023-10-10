@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Classes.css"
-import Cell from '../../components/Classes/Cell'
+import Cell from '../../components/Classes/Cell';
 
 
 
