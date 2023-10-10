@@ -10,6 +10,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Parents from './pages/Parents/Parents';
 import TeachersPage from './pages/TeachersPage/TeachersPage.jsx';
 import Classes from './pages/Classes/Classes.jsx';
+import Blog from './pages/Blog/Blog';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route path='/teachers' element={<TeachersPage />} />
       <Route path='/parents' element={<Parents />} />
       <Route path='/classes' element={<Classes/>} />
+      <Route path='/Blog' element={<Blog/>} />
     </Route>
   )
 );
