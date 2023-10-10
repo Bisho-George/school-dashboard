@@ -20,7 +20,7 @@ function Students() {
       <div className="">
         <div className="table-responsive">
           <table className="table">
-            <thead className="">
+            <thead>
               <tr className="text-center border">
                 <td className="">
                   <input type="checkbox" name="student" id="student" />
