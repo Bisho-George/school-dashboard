@@ -15,7 +15,7 @@ const Blog = () => {
       <div className="row">
         <div className="col-sm-12 col-md-9">
         <div className="row event">
-           <Header headerTitle="Event of this month" btnName="Event"/>
+           <Header headerTitle="Event of this month" btnName="Event" target="#Add-event-model"/>
            {events.map((event) => (
                  <CardEventAndNews 
                     img={event.image} 
@@ -28,7 +28,7 @@ const Blog = () => {
 
         </div>
         <div className="row news">
-           <Header headerTitle="News of this month" btnName="News"/>
+           <Header headerTitle="News of this month" btnName="News"  target="#Add-new-model"/>
            {events.map((event) => (
                  <CardEventAndNews 
                     img={event.image} 

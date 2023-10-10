@@ -6,3 +6,9 @@
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.08);
    
 }
+.css-4jnixx-MuiStack-root>.MuiTextField-root {
+    min-width: 100% !important;
+}
+.MuiStack-root {
+    background-color: #FFF !important;
+}
