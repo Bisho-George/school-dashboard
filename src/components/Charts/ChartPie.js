@@ -11,16 +11,15 @@ const PieChartComponent = () => {
       colors: ['#ff6eab', '#6a93d4', '#faf86b'],
     },
     series: [70,20, 10],
-   plotOptions: {
-  pie: {
-    donut: {
-      labels: {
-        show: true,
+    plotOptions: {
+     pie: {
+      donut: {
+        labels: {
+          show: true,
       },
-    },
-   
+    }
   },
-}
+    }
 
   };
 

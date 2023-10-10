@@ -5,7 +5,7 @@ import classLogo from "../../assets/class-scene-svgrepo.svg";
 import LineChart from "../../components/Charts/Line";
 import CardAnalysis from "../../components/Card/CardAnalysis";
 import BasicDateCalendar from "../../components/Calender/Calendar";
-import DropdownButton from "../../components/DropDownBtn/DropDown";
+import DropdownButton from "../../components/Buttons/DropDown";
 import PieChartComponent from "../../components/Charts/ChartPie";
 
 const Dashboard = () => {
