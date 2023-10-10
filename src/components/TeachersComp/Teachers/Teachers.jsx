@@ -47,8 +47,14 @@ function Teachers() {
                             </div>
                             <div className="modal-body">
                                 <div className="my-2">
-                                  <label htmlFor="image">Add teacher picture</label>
-                                  <input placeholder="Upload picture" name="image" id='image' className="form-control mt-1 py-2" type="file" />
+                                  <label className='w-100' htmlFor="image">
+                                    <p className='mb-0'>Add teacher picture</p>
+                                    <div className={`${styles.upload} mt-1 border rounded-1 d-flex align-items-center justify-content-between`}>
+                                      <p className='mb-0 p-2'>Upload picture</p>
+                                      <div className={`w-25 p-2 ${styles.uploadBtn}`}><i className="fa-solid mx-2 fa-upload"></i>Upload</div>
+                                    </div>
+                                  </label>
+                                  <input placeholder="Upload picture" name="image" id='image' className="form-control mt-1 py-2 d-none" type="file" />
                                 </div>
                                 <div className="my-2">
                                   <label htmlFor="name">Teacher name</label>
@@ -58,10 +64,26 @@ function Teachers() {
                                   <label htmlFor="subject">Subject</label>
                                   <input placeholder="subject" name="subject" id='subject' className="form-control mt-1 py-2" type="text" />
                                 </div>
+                                <div className="my-2">
+                                  <label htmlFor="grade">Grade</label>
+                                  <input placeholder="Select grade" name="grade" id='grade' className="form-control mt-1 py-2" type="text" />
+                                </div>
+                                <div className="my-2">
+                                  <label htmlFor="classNum">Class number</label>
+                                  <input placeholder="Select class number" name="classNum" id='classNum' className="form-control mt-1 py-2" type="text" />
+                                </div>
+                                <div className="my-2">
+                                  <label htmlFor="userName">Username</label>
+                                  <input placeholder="Enter username" name="userName" id='userName' className="form-control mt-1 py-2" type="text" />
+                                </div>
+                                <div className="my-2">
+                                  <label htmlFor="pass">Password</label>
+                                  <input placeholder="Enter password" name="pass" id='pass' className="form-control mt-1 py-2" type="password" />
+                                </div>
                             </div>
-                            <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                <button data-bs-dismiss="modal" type="submit" className="btn btn-info"><i className="fas fa-plus-circle"></i> Add</button>
+                            <div className="px-3 mb-3 d-flex gap-3">
+                              <button type="button" className={`w-50 py-2 fw-bold rounded-2 ${styles.cancelBtn}`} data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                                <button data-bs-dismiss="modal" type="submit" className={`w-50 py-2 fw-bold rounded-2 ${styles.addBtn}`}>Add</button>
                             </div>
                         </div>
                     </div>

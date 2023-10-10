@@ -5,7 +5,7 @@ import Teachers from "../../components/TeachersComp/Teachers/Teachers";
 function TeachersPage() {
   return (
     <>
-      <div className="mx-4 w-100">
+      <div className="container">
         <Subtitle
           title="Science"
           icon={<i className="fa-solid fa-flask"></i>}

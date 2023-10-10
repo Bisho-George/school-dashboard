@@ -9,12 +9,14 @@ import Root from './pages/Root.jsx';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Parents from './pages/Parents/Parents';
 import TeachersPage from './pages/TeachersPage/TeachersPage.jsx';
+import StudentsPage from './pages/StudentsPage/StudentsPage';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route index element={<Dashboard />} />
       <Route path='/teachers' element={<TeachersPage />} />
       <Route path='/parents' element={<Parents />} />
+      <Route path='/students' element={<StudentsPage />} />
     </Route>
   )
 );
