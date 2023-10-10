@@ -15,7 +15,7 @@ const ParentsFilter = () => {
                     <option value="3">Three</option>
                 </select>
 
-                <select className="form-select select-style">
+                <select className="form-select select-style" >
                     <option >Gender</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>

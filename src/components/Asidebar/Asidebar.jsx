@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import logo from "../../assets/Group 93.svg";
 import { ReactComponent as Logout } from "../../assets/logout.svg";
 import { pages } from "../../constants/index.js";
+import './Asidebar.css'
 
 import {
   Drawer,
@@ -83,25 +84,14 @@ const Asidebar = () => {
               >
               <ListItemButton sx={{ m: 0, p: 0 }}>
                 <ListItemIcon sx={{
-                  fill: location.pathname === `${page.path}` ? theme.palette.primary.main : theme.palette.primary.gray, 
+                  '& svg g path': {fill: location.pathname === page.path ? theme.palette.primary.main: ''}
                 }}>{page.icon}</ListItemIcon>
                 <ListItemText primary={page.name} sx={{'& .MuiTypography-root': {fontFamily: 'inter', fontWeight: location.pathname === page.path ? '600' : '', fontSize: '20px', letterSpacing: '0.32px'}}}/>
               </ListItemButton>
             </ListItem>
           ))}
         </List>
-        {/* <List>
-          {["All mail", "Trash", "Spam"].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <Inbox /> : <Mail />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List> */}
+
       </Box>
       <Box
         component="div"
