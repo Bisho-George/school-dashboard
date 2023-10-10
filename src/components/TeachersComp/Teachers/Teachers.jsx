@@ -16,7 +16,7 @@ function Teachers() {
         <div className="row">
           {teachers.map((teacher) => (
             <div key={teacher.userName} className="col-lg-2 col-md-4">
-              <div className={`${styles.teacher} p-3 rounded-2 text-center`}>
+              <div className={`${styles.teacher} p-3 rounded-2 text-center overflow-hidden my-2`}>
                 <img
                   src={teacher.image}
                   className="w-100"
