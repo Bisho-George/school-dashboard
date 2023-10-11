@@ -1,6 +1,6 @@
 import React from 'react'
-import { parentTableFields } from '../../constants/index.js'
-import { tempParentsTableData } from '../../constants/index.js'
+import { parentTableFields } from '../../constants'
+import { tempParentsTableData } from '../../constants'
 import './parentsTable.css'
 const ParentsTable = () => {
     return (
