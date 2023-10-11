@@ -1,27 +1,27 @@
 import React from 'react'
 import "./Classes.css"
-import Cell from '../../components/Classes/Cell';
+import Cell from '../../components/Classes/Cell'
 
 
 
 export default function Classes() {
     return (
-        <section className='classes'>
+        <section className='container classes'>
 
             {/* ---------- choose ---------- */}
 
-            <div className="choose">
-                <select name="" id="" className="level">
+            <div className="choose mt-5 mb-3">
+                <select className="level">
                     <option value="Choose level">Choose level</option>
                 </select>
-                <select name="" id="" className='class'>
+                <select className='class'>
                     <option value="Choose class">Choose class</option>
                 </select>
             </div>
 
             {/* ----------- table ---------- */}
 
-            <table>
+            <table className='classes-table'>
 
                 <tr> {/* fixed */}
                     <th className='day-duration'>

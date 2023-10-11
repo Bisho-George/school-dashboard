@@ -12,8 +12,9 @@ export default function DateCalendarValue({ calenderBackgColor, buttonBackgColor
       <DemoContainer  sx={{
         '& .MuiDateCalendar-root': { bgcolor: calenderBackgColor },
         '& .MuiTouchRipple-root ': {display: 'none'},
-        '& .MuiButtonBase-root.MuiPickersDay-root.Mui-selected': {color: selectedDateColor},
+        '& .MuiButtonBase-root.MuiPickersDay-root.Mui-selected': {color: selectedDateColor, bgcolor: buttonBackgColor},
         '& .MuiButtonBase-root.MuiPickersDay-root.Mui-selected:focus': {color: selectedDateColor},
+        '& .MuiButtonBase-root.MuiPickersDay-root.Mui-selected:hover': {color: selectedDateColor},
         "& .MuiPickersDay-root.Mui-selected": {
             bgcolor: buttonBackgColor,
             border: borderStyle,
