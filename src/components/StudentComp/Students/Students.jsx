@@ -19,7 +19,7 @@ function Students() {
     <>
       <div className="">
         <div className="table-responsive">
-          <table className="table">
+          <table className={`table ${styles.tabl}`}>
             <thead>
               <tr className="text-center border">
                 <td className="">

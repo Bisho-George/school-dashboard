@@ -1,5 +1,5 @@
 .row th {
-    padding: 12px 0px !important;
+    padding: 15px 0px !important;
 }
 
 .row td {
@@ -9,4 +9,9 @@
     padding: 12px 0px !important;
     color: #48DA8B !important;
     background-color: #48DA8B !important;
+}
+
+.tabl th {
+    font-size: 17px;
+    padding: 12px 0px !important;
 }
