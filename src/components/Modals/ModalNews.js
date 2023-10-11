@@ -1,5 +1,7 @@
 import React from 'react'
 import BasicDatePicker from '../Buttons/AddDate';
+import ModalButtons from '../Buttons/ModalButtons';
+import styles from './Modal.module.css';
 export default function ModalNews() {
   return (
     <div className="modal fade" id="Add-new-model" tabIndex="-1" aria-labelledby="Add-news" aria-hidden="true">
@@ -20,8 +22,14 @@ export default function ModalNews() {
               <input type="text" className="form-control" id="new-description"/>
             </div>
             <div className="mb-3">
-              <label htmlFor="new-img" className="col-form-label">Add image</label>
-              <input type="file" accept="image/*" className="form-control" id="event-img"/>
+                <label className='w-100' htmlFor="new-img">
+                  <p className='mb-2'>Add image</p>
+                    <div className={`${styles.upload} mt-1 border rounded-1 d-flex align-items-center justify-content-between`}>
+                         <p className='mb-0 p-2'>Enter the picture</p>
+                         <div className={`w-25 p-2 ${styles.uploadBtn}`}><i className="fa-solid mx-2 fa-upload"></i>Upload</div>
+                    </div>
+                </label>
+                <input placeholder="Upload picture" name="new-img" id='new-img' className="form-control mt-1 py-2 d-none" type="file" />
             </div>
             <div className="mb-3">
               <label htmlFor="new-Date" className="col-form-label">Add Date</label>
@@ -29,10 +37,7 @@ export default function ModalNews() {
             </div>
           </form>
         </div>
-        <div className="modal-footer">
-          <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" className="btn btn-primary">Add</button>
-        </div>
+         <ModalButtons/>
       </div>
     </div>
   </div>

@@ -6,7 +6,7 @@ import ParentsPagination from '../../components/ParentsPagination/ParentsPaginat
 
 const Parents = () => {
     return (
-        <section className='container-fluid'> 
+        <section className='container'> 
             <ParentsFilter />
             <div className='table-wrapper' id='table-wrapper'>
                 <ParentsTable/>
