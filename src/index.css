@@ -1,0 +1,10 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+th {
+    font-weight: bold !important;
+    font-size: 18px !important;
+}
