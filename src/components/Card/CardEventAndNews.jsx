@@ -2,7 +2,7 @@ import React from 'react'
 
 const CardEventAndNews =({img,title,body,date}) => {
   return (
- <div className="card mb-3">
+ <div className="card mb-3 shadow" >
   <div className="row g-0">
     <div className="col-md-4">
       <img src={img} className="img-fluid rounded-start" alt="..."/>

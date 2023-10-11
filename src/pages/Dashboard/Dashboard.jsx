@@ -15,7 +15,7 @@ const Dashboard = () => {
   return (
     <div className="container mb-3">
       <div className="row">
-        <div className="col-sm-12 col-md-9">
+        <div className="col-sm-12 col-md-7 col-lg-9">
           <div className="row cards-analysis">
             <CardAnalysis logo={students} header="Total Students" count="5.k" />
             <CardAnalysis logo={teacher} header="Total Teachers" count="500" />
@@ -31,7 +31,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="row student-grade">
-           <div className="col-md-6">
+           <div className="col-md-12 col-lg-6">
              <div className="card p-4 my-3 mx-2" style={{backgroundColor:"#EFF4FE"}}>
                <div className="card-title mb-3">
                  <h2 className="title">Students Performance</h2>
@@ -60,7 +60,7 @@ const Dashboard = () => {
                </div>
              </div>
            </div>
-           <div className="col-md-6">
+           <div className="col-md-12 col-lg-6">
                <div className="card p-4 my-3 mx-2" style={{backgroundColor:"#EFF4FE"}}>
                  <div className="card-title mb-3 d-flex flex-column align-items-center justify-content-center">
                     <h2 className="title">Students Attendance</h2>
@@ -76,7 +76,7 @@ const Dashboard = () => {
            </div>
           </div>
         </div>
-        <div className="col-sm-12 col-md-3">
+        <div className="col-sm-12 col-md-5 col-lg-3">
           <BasicDateCalendar />
           <div className="card event mt-4 shadow">
             <h2 className="event-title">Events</h2>
