@@ -91,10 +91,7 @@ function Teachers() {
                                   <input placeholder="Enter password" name="pass" id='pass' className="form-control mt-1 py-2" type="password" />
                                 </div>
                             </div>
-                            <div className="px-3 mb-3 d-flex gap-3">
-                              <button type="button" className={`w-50 py-2 fw-bold rounded-2 ${styles.cancelBtn}`} data-bs-dismiss="modal" aria-label="Close">Cancel</button>
-                                <button data-bs-dismiss="modal" type="submit" className={`w-50 py-2 fw-bold rounded-2 ${styles.addBtn}`}>Add</button>
-                            </div>
+                            <ModalButtons/>
                         </div>
                     </div>
                 </form>
