@@ -49,6 +49,7 @@ const Asidebar = () => {
       anchor="left"
       open={open}
       onClose={handleDrawerClose}
+      className="drawer"
     >
       <Box
         component="div"
