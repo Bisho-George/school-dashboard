@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import BasicDatePicker from '../Buttons/AddDate';
-
+import ModalButtons from '../Buttons/ModalButtons';
+import styles from './Modal.module.css';
 export default function ModalEvent() {
   return (
     <div className="modal fade" id="Add-event-model" tabIndex="-1" aria-labelledby="Add-event" aria-hidden="true">
@@ -21,19 +22,22 @@ export default function ModalEvent() {
                <input type="text" className="form-control" id="event-description" placeholder='Enter the description'/>
              </div>
              <div className="mb-3">
-               <label htmlFor="event-img" className="col-form-label">Add image</label>
-               <input type="file" accept="image/*" className="form-control" id="event-img" placeholder='Enter the image'/>
-             </div>
+                <label className='w-100' htmlFor="new-img">
+                  <p className='mb-2'>Add image</p>
+                    <div className={`${styles.upload} mt-1 border rounded-1 d-flex align-items-center justify-content-between`}>
+                         <p className='mb-0 p-2'>Enter the picture</p>
+                         <div className={`w-25 p-2 ${styles.uploadBtn}`}><i className="fa-solid mx-2 fa-upload"></i>Upload</div>
+                    </div>
+                </label>
+                <input placeholder="Upload picture" name="new-img" id='new-img' className="form-control mt-1 py-2 d-none" type="file" />
+            </div>
              <div className="mb-3">
                <label htmlFor="event-Date" className="col-form-label">Add Date</label>
                 <BasicDatePicker/>   
              </div>
            </form>
          </div>
-         <div className="modal-footer">
-           <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-           <button type="button" className="btn btn-primary">Add</button>
-         </div>
+         <ModalButtons/>
        </div>
      </div>
    </div>
