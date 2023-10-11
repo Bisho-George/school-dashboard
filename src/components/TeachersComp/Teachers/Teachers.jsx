@@ -6,6 +6,15 @@ import ModalButtons from '../../Buttons/ModalButtons';
 
 function Teachers() {
 
+  const [teacherImg, setTeacherImg] = useState(null);
+
+  function getPicture(e) {
+    let picture = e.target.value;
+    setTeacherImg(picture);
+  }
+
+  
+
   const [teachers, setTeachers] = useState([
     { image: TeacherImg1, name: 'Mazen', subject: 'science', grade: 'A+', classNum: '2-3', userName: 'mazen', pass: 'mazen11' },
     { image: TeacherImg2, name: 'Abderhman', subject: 'math', grade: 'B+', classNum: '1-5', userName: 'momtaz', pass: 'momtaz22' },
@@ -51,11 +60,11 @@ function Teachers() {
                                   <label className='w-100' htmlFor="image">
                                     <p className='mb-0'>Add teacher picture</p>
                                     <div className={`${styles.upload} mt-1 border rounded-1 d-flex align-items-center justify-content-between`}>
-                                      <p className='mb-0 p-2'>Upload picture</p>
+                                      <p className='mb-0 p-2'>{teacherImg ? teacherImg : 'Upload picture'}</p>
                                       <div className={`w-25 p-2 ${styles.uploadBtn}`}><i className="fa-solid mx-2 fa-upload"></i>Upload</div>
                                     </div>
                                   </label>
-                                  <input placeholder="Upload picture" name="image" id='image' className="form-control mt-1 py-2 d-none" type="file" />
+                                  <input onChange={getPicture} placeholder="Upload picture" name="image" id='image' className="form-control mt-1 py-2 d-none" type="file" />
                                 </div>
                                 <div className="my-2">
                                   <label htmlFor="name">Teacher name</label>
@@ -82,7 +91,10 @@ function Teachers() {
                                   <input placeholder="Enter password" name="pass" id='pass' className="form-control mt-1 py-2" type="password" />
                                 </div>
                             </div>
-                            <ModalButtons/>
+                            <div className="px-3 mb-3 d-flex gap-3">
+                              <button type="button" className={`w-50 py-2 fw-bold rounded-2 ${styles.cancelBtn}`} data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                                <button data-bs-dismiss="modal" type="submit" className={`w-50 py-2 fw-bold rounded-2 ${styles.addBtn}`}>Add</button>
+                            </div>
                         </div>
                     </div>
                 </form>
