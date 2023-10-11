@@ -4,12 +4,7 @@ import { DemoContainer, DemoItem } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
-<<<<<<< HEAD
-
-export default function DateCalendarValue() {
-=======
 export default function DateCalendarValue({ calenderBackgColor, buttonBackgColor ,borderStyle, selectedDateColor }) {
->>>>>>> Blog-page
   const [value, setValue] = React.useState(dayjs('2023-10-11'));
 
   return (
